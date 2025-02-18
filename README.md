@@ -1,38 +1,67 @@
-YouTube to MP3 converter built with React.
+Here's a suggested README file for the `video_to_audio_converter` repository:
 
-**Demo:**
+```markdown
+# YouTube to MP3 Converter
 
-https://yttomp3.ivo.xyz/
-
-https://ivo.xyz/projects/yt-to-mp3-converter
+A simple and efficient web application that allows users to convert YouTube videos to MP3 format. Built with React for the frontend and ExpressJS for the backend, this project leverages FFMPEG for audio conversion.
 
 ## Features
 
-- Search for YouTube videos by keyword
-- Watch videos
-- View video info (descriptions, views, etc) and related videos
-- Download videos as a .mp3 file
+- **Search for YouTube Videos**: Easily find videos by entering keywords.
+- **Watch Videos**: View videos directly within the application.
+- **Video Information**: Display detailed information about the videos, including descriptions, view counts, and related videos.
+- **Download MP3**: Convert and download videos as MP3 files.
+
+## Technology Stack
+
+- **Frontend**: React
+- **Backend**: ExpressJS
+- **Audio Conversion**: FFMPEG
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/nebaw-21/video_to_audio_converter.git
+   ```
+
+2. Navigate into the project directory:
+   ```bash
+   cd video_to_audio_converter
+   ```
+
+3. Install dependencies for both frontend and backend:
+   ```bash
+   npm install
+   ```
+
+4. Start the server:
+   ```bash
+   npm start
+   ```
+
+5. Open your browser and go to `http://localhost:3000` to access the application.
 
 ## Usage
 
-- Clone the repository.
-- run `npm install` in **both** /client and /api directories
-- Rename **example.env.local** file which is located in /client directory to **.env.local** and add your YouTube API key.
-- run `npm start` in **both** /client and /api directories
-- Open [http://localhost:3000](http://localhost:3000) in your browser
+1. Enter a keyword in the search bar to find YouTube videos.
+2. Click on a video to watch it and view its details.
+3. Click the download button to convert the video to MP3 format.
 
-## Frontend
+## License
 
-React app (bootstrapped with CRA) located in **/client** directory. Runs on port 3000.
+This project does not have a specified license. Please check the repository for further details.
 
-## Backend
+## Contributing
 
-ExpressJs app located in **/api** directory. Runs on port 3001 by default. Downloads and coverts YouTube video to mp3.
+Contributions are welcome! If you have suggestions for improvements or want to add features, feel free to submit a pull request.
 
-Endpoint: GET `/download/:videoId`
+## Contact
 
-params: `videoId` - YouTube video id (string **required**)
+For any inquiries or issues, please open an issue in the repository or contact the maintainer.
 
-**NOTE:**
-In order to be able to download and convert videos to .mp3 you must install ffmpeg on your system. You must also set FFMPEG_PATH environment variable in your system.
-Please check [Fluent ffmpeg's documentation](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg) for more info.
+```
+
+Feel free to modify any sections to better fit your project's specifics!
